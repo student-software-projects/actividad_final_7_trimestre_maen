@@ -17,7 +17,7 @@
                 <thead>
                 <tr>
                 <th scope="col">ID</th>
-                <th scope="col">Nombre del Equipo</th>
+                <th scope="col">Nombre del conductor</th>
                 <th scope="col">Logo</th>
                 <th scope="col">Localidad</th>
                 <th scope="col">FECHA CREACION</th>

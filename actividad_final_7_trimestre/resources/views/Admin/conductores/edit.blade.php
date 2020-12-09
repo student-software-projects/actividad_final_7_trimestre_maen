@@ -15,16 +15,39 @@
             <form action="{{route('conductores.update',$equipos->id)}}" method="POST">
                 @csrf
                 @method('PUT')
+                <div class="form-group">
+                    <label for="nit">Numero de Cedula</label>
+                    <input name="Numero de Cedula" id="nit" type="text" class="form-control">
+                </div>
                 <div class="form-group mt-4">
-                    <label for="name">Nombre del Equipo</label>
-                    <input name="name" id="name" type="text" class="form-control" value="{{$equipos->name}}">
+                    <label for="name">Primer de Nombre</label>
+                    <input name="Nombre del Conductor" id="name" type="text" class="form-control">
+                </div>
+                <div class="form-group mt-4">
+                    <label for="name">segundo Nombre</label>
+                    <input name="Nombre del Conductor" id="name" type="text" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="nit">Logo</label>
-                    <input name="nit" id="nit" type="text" class="form-control" value="{{$equipos->nit}}">
+                    <label for="address">Primer Apellido</label>
+                    <input name="Primer Apellido" id="address" type="text" class="form-control">
                 </div>
-                <div class="form-group mt-4">
-                    <label for="name">localidades</label>
+                <div class="form-group">
+                    <label for="address">Segundo Apellido</label>
+                    <input name="Segundo Apellido" id="address" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="address">Direccion</label>
+                    <input name="Direccion" id="address" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="address">telefono</label>
+                    <input name="telefono" id="address" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="address">ciudad</label>
+                    <input name="ciudad" id="address" type="text" class="form-control">
+                </div>
+                    <label for="name">ciudad</label>
                     <select name="" id="" class="form-control" required>
                         <option value="">seleccionar...</option>
                         @foreach($localidad as $localidad
