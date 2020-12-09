@@ -10,7 +10,8 @@ const mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-mix.styles(['resources/css/app.css','resources/css/bootstrap.min.css','resources/css/now-ui-dashboard.css','resources/css/now-ui-dashboard.min.css'], 'public/css/app.css')
-    .scripts([ 'resources/js/app.js','resources/js/now-ui-dashboard.min.js','resources/js/now-ui-dashboard.js','resources/js/bootstrap.js','resources/js/app.js','resources/js/bootstrap.min.js','resources/js/jquery.min.js','resources/js/popper.min.js','resources/js/bootstrap-notify.js','resources/js/chartjs.min.js','resources/js/perfect-scrollbar.jquery.min.js'],'public/js/app.js')
+mix.styles(['resources/css/black-dashboard.css','resources/css/black-dashboard.min.css','resources/css/nucleo-icons.css'], 'public/css/app.css')
+    .scripts([ 'resources/js/black-dashboard.js','resources/js/black-dashboard.min.js','resources/js/bootstrap.min.js','resources/js/bootstrap-notify.js','resources/js/chartjs.min.js','resources/js/jquery.min.js','resources/js/perfect-scrollbar.jquery.min.js','resources/js/popper.min.js','resources/js/gulpfile.js'],'public/js/app.js')
+
 
 

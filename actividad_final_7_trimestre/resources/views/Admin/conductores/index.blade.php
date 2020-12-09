@@ -18,26 +18,26 @@
                 <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Nombre del conductor</th>
-                <th scope="col">Logo</th>
+                <th scope="col">Apellidos del conductor</th>
                 <th scope="col">Localidad</th>
                 <th scope="col">FECHA CREACION</th>
                 <th scope="col">OPCIONES</th>
                 </tr>
                 </thead>
                   <tbody>
-                  @foreach($equipos as $equipos)
+                  @foreach($conductores as $conductores)
                   <tr>
-                      <td>{{$equipos->id}}</td>
-                      <td>{{$equipos->nombre_equipo}}</td>
-                      <td>{{$equipos->logo}}</td>
-                      <td>{{$equipos->localidad_id}}</td>
-                      <td>{{$equipos->created_at}}</td>
+                      <td>{{$conductores->id}}</td>
+                      <td>{{$conductores->nombre_equipo}}</td>
+                      <td>{{$conductores->logo}}</td>
+                      <td>{{$conductores->localidad_id}}</td>
+                      <td>{{$conductores->created_at}}</td>
                       <td>
-                          <form action="{{ route( 'conductores.destroy',$equipos->id)}}" method="post">
+                          <form action="{{ route( 'conductores.destroy',$conductores->id)}}" method="post">
                               @csrf
                               @method('DELETE')
-                          <a href="{{ route('conductores.show',$equipos->id)}}" class="btn btn-sm btn-info">Detalles</a>
-                          <a href="{{ route('conductores.edit',$equipos->id)}}" class="btn btn-sm btn-warning">Editar</a>
+                          <a href="{{ route('conductores.show',$conductores->id)}}" class="btn btn-sm btn-info">Detalles</a>
+                          <a href="{{ route('conductores.edit',$conductores->id)}}" class="btn btn-sm btn-warning">Editar</a>
                           <button type="submit" class="btn btn-sm btn-danger">Eliminar</buttonty>
                           </form>
                       </td>
