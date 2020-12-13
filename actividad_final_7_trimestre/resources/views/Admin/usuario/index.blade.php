@@ -12,36 +12,28 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <a class="btn btn-primary mt-3 mb-4" href="{{ route('propietarios.create') }}">Crear Nuevo Jugador</a>
+            <a class="btn btn-primary mt-3 mb-4" href="{{ route('vehiculo.create') }}">Crear Nueva Localidad</a>
               <table class="table table-striped">
                 <thead>
                 <tr>
                 <th scope="col">ID</th>
-                <th scope="col">Nombres</th>
-                <th scope="col">Apellidos</th>
-                <th scope="col">Numero Camisa</th>
-                <th scope="col">Apodo</th>
-                <th scope="col">Equipo</th>
-                <th scope="col">Fecha Creación</th>
+                <th scope="col">Localidad</th>
+                <th scope="col">Fecha Creacion</th>
                 <th scope="col">OPCIONES</th>
                 </tr>
                 </thead>
                   <tbody>
-                  @foreach($jugadores as $jugadores)
+                  @foreach($localidad as $localidad)
                   <tr>
-                      <td>{{$jugadores->id}}</td>
-                      <td>{{$jugadores->nombres}}</td>
-                      <td>{{$company->apellidos}}</td>
-                      <td>{{$jugadores->numero_camisa}}</td>
-                      <td>{{$company->apodo}}</td>
-                      <td>{{$jugadores->equipo_id}}</td>
-                      <td>{{$jugadores->created_at}}</td>
+                      <td>{{$localidad->id}}</td>
+                      <td>{{$localidad->localidad}}</td>s
+                      <td>{{$localidad->created_at}}</td>
                       <td>
-                          <form action="{{ route( 'propietarios.destroy',$jugadores->id)}}" method="post">
+                          <form action="{{ route( 'vehiculo.destroy',$localidad->id)}}" method="post">
                               @csrf
                               @method('DELETE')
-                          <a href="{{ route('propietarios.show',$jugadores->id)}}" class="btn btn-sm btn-info">Detalles</a>
-                          <a href="{{ route('propietarios.edit',$jugadores->id)}}" class="btn btn-sm btn-warning">Editar</a>
+                          <a href="{{ route('vehiculo.show',$localidad->id)}}" class="btn btn-sm btn-info">Detalles</a>
+                          <a href="{{ route('vehiculo.edit',$localidad->id)}}" class="btn btn-sm btn-warning">Editar</a>
                           <button type="submit" class="btn btn-sm btn-danger">Eliminar</buttonty>
                           </form>
                       </td>

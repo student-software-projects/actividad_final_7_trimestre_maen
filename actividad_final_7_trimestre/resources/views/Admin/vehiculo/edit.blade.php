@@ -12,7 +12,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <form action="{{route('vehiculos.update',$localidad->id)}}" method="POST">
+            <form action="{{route('vehiculo.update',$localidad->id)}}" method="POST">
                 @csrf
                 @method('PUT')
                 <div class="form-group mt-4">
@@ -20,7 +20,7 @@
                     <input name="localidad" id="name" type="text" class="form-control" value="{{$localidad->localidad}}">
                 </div>
                 <button type="submit" class="btn btn-primary">Guardar Actualización</button>
-                <a class="btn btn-sm btn-danger" href="{{ route('vehiculos.index')}}">Cancelar</a>
+                <a class="btn btn-sm btn-danger" href="{{ route('vehiculo.index')}}">Cancelar</a>
             </form>
         </div>
     </div>

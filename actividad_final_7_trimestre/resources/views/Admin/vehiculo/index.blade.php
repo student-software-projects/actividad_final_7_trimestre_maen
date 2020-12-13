@@ -12,7 +12,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <a class="btn btn-primary mt-3 mb-4" href="{{ route('vehiculos.create') }}">Crear Nueva Localidad</a>
+            <a class="btn btn-primary mt-3 mb-4" href="{{ route('vehiculo.create') }}">Crear Nueva Localidad</a>
               <table class="table table-striped">
                 <thead>
                 <tr>
@@ -29,11 +29,11 @@
                       <td>{{$localidad->localidad}}</td>s
                       <td>{{$localidad->created_at}}</td>
                       <td>
-                          <form action="{{ route( 'vehiculos.destroy',$localidad->id)}}" method="post">
+                          <form action="{{ route( 'vehiculo.destroy',$localidad->id)}}" method="post">
                               @csrf
                               @method('DELETE')
-                          <a href="{{ route('vehiculos.show',$localidad->id)}}" class="btn btn-sm btn-info">Detalles</a>
-                          <a href="{{ route('vehiculos.edit',$localidad->id)}}" class="btn btn-sm btn-warning">Editar</a>
+                          <a href="{{ route('vehiculo.show',$localidad->id)}}" class="btn btn-sm btn-info">Detalles</a>
+                          <a href="{{ route('vehiculo.edit',$localidad->id)}}" class="btn btn-sm btn-warning">Editar</a>
                           <button type="submit" class="btn btn-sm btn-danger">Eliminar</buttonty>
                           </form>
                       </td>

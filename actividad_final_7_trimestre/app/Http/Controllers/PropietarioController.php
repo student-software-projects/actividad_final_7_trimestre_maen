@@ -8,33 +8,33 @@ class PropietarioController extends Controller
 {
     public function index()
     {
-        $propietarios=propietarios::all();
-        return view('propietarios.index',compact('propietarios'));
+        $propietarios=propietario::all();
+        return view('propietario.index',compact('propietarios'));
     }
     public function create(){
-        return view('propietarios.create');
+        return view('propietario.create');
     }
     public function store(Request $request){
-        $propietarios=propietarios::create($request->all());
-        return redirect()->route('propietarios.index');
+        $propietario=propietario::create($request->all());
+        return redirect()->route('propietario.index');
     }
     public function show($id){
-        $propietarios=propietarios::find($id);
-        return view('propietarios.show',compact('propietarios'));
+        $propietario=propietario::find($id);
+        return view('propietario.show',compact('propietario'));
     }
 
     public function edit($id){
-        $propietarios=propietarios::find($id);
-        return view('propietarios.edit',compact('propietarios'));
+        $propietario=propietario::find($id);
+        return view('propietario.edit',compact('propietario'));
     }
 
     public function update(Request  $request, $id){
-        $propietarios=propietarios::find($id)->update($request->all());
-        return redirect()->route('propietarios.index');
+        $propietario=propietario::find($id)->update($request->all());
+        return redirect()->route('propietario.index');
 
     }
     public function destroy($id){
-        $propietarios=propietarios::find($id)->delete();
-        return redirect()->route('propietarios.index');
+        $propietario=propietario::find($id)->delete();
+        return redirect()->route('propietario.index');
     }
 }

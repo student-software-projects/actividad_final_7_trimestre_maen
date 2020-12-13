@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\ConductorController;
+use App\Http\Controllers\PropietarioController;
+use App\Http\Controllers\UsuariosController;
+use App\Http\Controllers\VehiculoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,13 +26,13 @@ Route::get('inicio', function () {
 
 //conductores
 
-    Route::get('conductores', [ConductorController::class, 'index'])->name('conductores.index');
-    Route::get('conductores/conductores', [ConductorController::class, 'create'])->name('conductores.create');
-    Route::post('conductores', [ConductorController::class, 'store'])->name('conductores.store');
-    Route::get('conductores/{id}', [ConductorController::class, 'show'])->name('conductores.show');
-    Route::get('conductores/edit/{id}', [ConductorController::class, 'edit'])->name('conductores.edit');
-    Route::put('conductores/{id}', [ConductorController::class, 'update'])->name('conductores.update');
-    Route::delete('conductores/{id}', [ConductorController::class, 'destroy'])->name('conductores.destroy');
+    Route::get('conductores', [ConductorController::class,'index'])->name('conductores.index');
+    Route::get('conductores/conductores', [ConductorController::class,'create'])->name('conductores.create');
+    Route::post('conductores', [ConductorController::class,'store'])->name('conductores.store');
+    Route::get('conductores/{id}', [ConductorController::class,'show'])->name('conductores.show');
+    Route::get('conductores/edit/{id}', [ConductorController::class,'edit'])->name('conductores.edit');
+    Route::put('conductores/{id}', [ConductorController::class,'update'])->name('conductores.update');
+    Route::delete('conductores/{id}', [ConductorController::class,'destroy'])->name('conductores.destroy');
 
 //propietarios
 
@@ -42,21 +46,21 @@ Route::get('inicio', function () {
 
 //Vehiculos
 
-    Route::get('vehiculos', [VehiculoController::class, 'index'])->name('vehiculos.index');
-    Route::get('vehiculos/vehiculos', [VehiculoController::class, 'create'])->name('vehiculos.create');
-    Route::post('vehiculos', [VehiculoController::class, 'store'])->name('vehiculos.store');
-    Route::get('vehiculos/{id}', [VehiculoController::class, 'show'])->name('vehiculos.show');
-    Route::get('vehiculos/edit/{id}', [VehiculoController::class, 'edit'])->name('vehiculos.edit');
-    Route::put('vehiculos/{id}', [VehiculoController::class, 'update'])->name('vehiculos.update');
-    Route::delete('vehiculos/{id}', [VehiculoController::class, 'destroy'])->name('vehiculos.destroy');
+    Route::get('vehiculos', [VehiculoController::class, 'index'])->name('vehiculo.index');
+    Route::get('vehiculos/vehiculos', [VehiculoController::class, 'create'])->name('vehiculo.create');
+    Route::post('vehiculos', [VehiculoController::class, 'store'])->name('vehiculo.store');
+    Route::get('vehiculos/{id}', [VehiculoController::class, 'show'])->name('vehiculo.show');
+    Route::get('vehiculos/edit/{id}', [VehiculoController::class, 'edit'])->name('vehiculo.edit');
+    Route::put('vehiculos/{id}', [VehiculoController::class, 'update'])->name('vehiculo.update');
+    Route::delete('vehiculos/{id}', [VehiculoController::class, 'destroy'])->name('vehiculo.destroy');
 
 //Usuarios
 
-    Route::get('usuarios', [UsuariosController::class, 'index'])->name('usuarios.index');
-    Route::get('usuarios/usuarios', [UsuariosController::class, 'create'])->name('usuarios.create');
-    Route::post('usuarios', [UsuariosController::class, 'store'])->name('usuarios.store');
-    Route::get('usuarios/{id}', [UsuariosController::class, 'show'])->name('usuarios.show');
-    Route::get('usuarios/edit/{id}', [UsuariosController::class, 'edit'])->name('usuarios.edit');
-    Route::put('usuarios/{id}', [UsuariosController::class, 'update'])->name('usuarios.update');
-    Route::delete('usuarios/{id}', [UsuariosController::class, 'destroy'])->name('usuarios.destroy');
+    Route::get('usuarios', [UsuariosController::class, 'index'])->name('usuario.index');
+    Route::get('usuarios/usuarios', [UsuariosController::class, 'create'])->name('usuario.create');
+    Route::post('usuarios', [UsuariosController::class, 'store'])->name('usuario.store');
+    Route::get('usuarios/{id}', [UsuariosController::class, 'show'])->name('usuario.show');
+    Route::get('usuarios/edit/{id}', [UsuariosController::class, 'edit'])->name('usuario.edit');
+    Route::put('usuarios/{id}', [UsuariosController::class, 'update'])->name('usuario.update');
+    Route::delete('usuarios/{id}', [UsuariosController::class, 'destroy'])->name('usuario.destroy');
 

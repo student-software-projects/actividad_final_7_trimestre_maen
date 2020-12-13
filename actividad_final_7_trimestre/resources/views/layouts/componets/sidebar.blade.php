@@ -13,59 +13,30 @@
         </div>
         <ul class="nav">
             <li class="active ">
-                <a href="./dashboard.html">
+                <a href="">
                     <i class="tim-icons icon-chart-pie-36"></i>
                     <p>Dashboard</p>
                 </a>
             </li>
-            <li>
-                <a href="./icons.html">
-                    <i class="tim-icons icon-atom"></i>
-                    <p>Icons</p>
+            <li class="active ">
+                <a href="propietario">
+                    <i class="tim-icons icon-chart-pie-45"></i>
+                    <p>Crear Un Propietario</p>
                 </a>
             </li>
-            <li>
-                <a href="./map.html">
-                    <i class="tim-icons icon-pin"></i>
-                    <p>Maps</p>
+            <li class="active ">
+                <a href="conductores">
+                    <i class="tim-icons icon-chart-pie-45"></i>
+                    <p>Crear Un Conductor</p>
                 </a>
             </li>
-            <li>
-                <a href="./notifications.html">
-                    <i class="tim-icons icon-bell-55"></i>
-                    <p>Notifications</p>
+            <li class="active ">
+                <a href="vehiculo">
+                    <i class="tim-icons icon-chart-pie-45"></i>
+                    <p>Crear Vehiculos</p>
                 </a>
             </li>
-            <li>
-                <a href="./user.html">
-                    <i class="tim-icons icon-single-02"></i>
-                    <p>User Profile</p>
-                </a>
-            </li>
-            <li>
-                <a href="./tables.html">
-                    <i class="tim-icons icon-puzzle-10"></i>
-                    <p>Table List</p>
-                </a>
-            </li>
-            <li>
-                <a href="./typography.html">
-                    <i class="tim-icons icon-align-center"></i>
-                    <p>Typography</p>
-                </a>
-            </li>
-            <li>
-                <a href="./rtl.html">
-                    <i class="tim-icons icon-world"></i>
-                    <p>RTL Support</p>
-                </a>
-            </li>
-            <li class="active-pro">
-                <a href="./upgrade.html">
-                    <i class="tim-icons icon-spaceship"></i>
-                    <p>Upgrade to PRO</p>
-                </a>
-            </li>
+
         </ul>
-        <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 519px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 487px;"></div></div></div>
+    </div>
 </div>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81ddd25d-edd9-49f8-a16f-12c5ae560cf3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/app/Models/Conductor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/app/Models/Propietario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/app/Models/Vehiculo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/propietario/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/app/Http/Controllers/ConductorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/app/Http/Controllers/ConductorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/app/Http/Controllers/PropietarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/app/Http/Controllers/PropietarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/app/Http/Controllers/UsuariosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/app/Http/Controllers/UsuariosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/app/Http/Controllers/VehiculoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/app/Http/Controllers/VehiculoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/database/migrations/2020_12_08_212742_create_propietarios_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/database/migrations/2020_12_08_212742_create_propietarios_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/database/migrations/2020_12_08_212819_create_vehiculos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/database/migrations/2020_12_08_212819_create_vehiculos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/conductores/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/conductores/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/conductores/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/conductores/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/conductores/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/conductores/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/conductores/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/conductores/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/propietarios/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/propietario/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/propietarios/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/propietario/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/propietarios/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/propietarios/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/propietario/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/usuarios/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/usuario/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/usuarios/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/usuario/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/usuarios/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/usuario/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/usuarios/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/usuario/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/vehiculos/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/vehiculo/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/vehiculos/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/vehiculo/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/vehiculos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/vehiculo/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/vehiculos/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/Admin/vehiculo/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/layouts/componets/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/layouts/componets/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/layouts/componets/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/layouts/componets/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actividad_final_7_trimestre/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/actividad_final_7_trimestre/routes/web.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/actividad_final_7_trimestre/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/composer" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/actividad_final_7_trimestre/vendor/tijsverkoyen/css-to-inline-styles" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1lc22accs5geWzVF3wrt8z2lo05" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/actividad_final_7_trimestre" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81ddd25d-edd9-49f8-a16f-12c5ae560cf3" name="Default Changelist" comment="" />
+      <created>1607881853647</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607881853647</updated>
+      <workItem from="1607881855380" duration="381000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="420" y="95" key="FileChooserDialogImpl" timestamp="1607882216359">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="420" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1607882216359" />
+  </component>
+</project>

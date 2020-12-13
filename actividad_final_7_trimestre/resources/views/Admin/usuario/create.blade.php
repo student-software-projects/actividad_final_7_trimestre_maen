@@ -12,14 +12,14 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-           <form action="{{route('vehiculos.store')}}" method="POST">
+           <form action="{{route('vehiculo.store')}}" method="POST">
                @csrf
                <div class="form-group mt-4">
                    <label for="name">Nombre de la localidad</label>
                    <input name="localidad" id="name" type="text" class="form-control">
                </div>
                <button type="submit" class="btn btn-primary">Guardar Nueva Localidad</button>
-               <a class="btn btn-sm btn-danger" href="{{route('vehiculos.index')}}">Cancelar</a>
+               <a class="btn btn-sm btn-danger" href="{{route('vehiculo.index')}}">Cancelar</a>
            </form>
         </div>
     </div>

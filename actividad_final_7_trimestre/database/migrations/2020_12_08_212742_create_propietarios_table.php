@@ -13,7 +13,7 @@ class CreatePropietariosTable extends Migration
      */
     public function up()
     {
-        Schema::create('propietarios', function (Blueprint $table) {
+        Schema::create('propietario', function (Blueprint $table) {
             $table->id();
             $table->string('Numero de Cedula',20);
             $table->string('Primer de Nombre',45);
@@ -34,6 +34,6 @@ class CreatePropietariosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('propietarios');
+        Schema::dropIfExists('propietario');
     }
 }

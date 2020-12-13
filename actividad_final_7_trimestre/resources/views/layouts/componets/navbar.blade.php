@@ -1,4 +1,5 @@
-<!-- Navbar -->
+
+!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
     <div class="container-fluid">
         <div class="navbar-wrapper">
@@ -11,12 +12,12 @@
             </div>
             <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
             <span class="navbar-toggler-bar navbar-kebab"></span>
             <span class="navbar-toggler-bar navbar-kebab"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navigation">
+        <div class="navbar-collapse collapse" id="navigation" style="">
             <ul class="navbar-nav ml-auto">
                 <li class="search-bar input-group">
                     <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split"></i>
@@ -24,7 +25,7 @@
                     </button>
                 </li>
                 <li class="dropdown nav-item">
-                    <a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
                         <div class="notification d-none d-lg-block d-xl-block"></div>
                         <i class="tim-icons icon-sound-wave"></i>
                         <p class="d-lg-none">
@@ -40,7 +41,7 @@
                     </ul>
                 </li>
                 <li class="dropdown nav-item">
-                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
                         <div class="photo">
                             <img src="../assets/img/anime3.png" alt="Profile Photo">
                         </div>
@@ -61,16 +62,4 @@
         </div>
     </div>
 </nav>
-<div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i class="tim-icons icon-simple-remove"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- End Navbar -->
