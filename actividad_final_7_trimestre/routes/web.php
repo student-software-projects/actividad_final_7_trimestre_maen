@@ -21,12 +21,16 @@ Route::get('/', function () {
     return view('welcome');
     });
 Route::get('inicio', function () {
-    return view('index.Index');
+    return view('inicio.Index');
 });
+
+// inicio del programa osea en welcome
+
+Route::get('inicio', [ConductorController::class,'index'])->name('inicio.inicio');
 
 //conductores
 
-    Route::get('conductores', [ConductorController::class,'index'])->name('conductores.index');
+    Route::get('conductores', [ConductorController::class,'index'])->name('conductores.inicio');
     Route::get('conductores/conductores', [ConductorController::class,'create'])->name('conductores.create');
     Route::post('conductores', [ConductorController::class,'store'])->name('conductores.store');
     Route::get('conductores/{id}', [ConductorController::class,'show'])->name('conductores.show');
@@ -36,7 +40,7 @@ Route::get('inicio', function () {
 
 //propietarios
 
-    Route::get('propietarios', [PropietarioController::class, 'index'])->name('propietarios.index');
+    Route::get('propietarios', [PropietarioController::class, 'index'])->name('propietarios.inicio');
     Route::get('propietarios/propietarios', [PropietarioController::class, 'create'])->name('propietarios.create');
     Route::post('propietarios', [PropietarioController::class, 'store'])->name('propietarios.store');
     Route::get('propietarios/{id}', [PropietarioController::class, 'show'])->name('propietarios.show');
@@ -46,17 +50,17 @@ Route::get('inicio', function () {
 
 //Vehiculos
 
-    Route::get('vehiculos', [VehiculoController::class, 'index'])->name('vehiculo.index');
-    Route::get('vehiculos/vehiculos', [VehiculoController::class, 'create'])->name('vehiculo.create');
-    Route::post('vehiculos', [VehiculoController::class, 'store'])->name('vehiculo.store');
-    Route::get('vehiculos/{id}', [VehiculoController::class, 'show'])->name('vehiculo.show');
-    Route::get('vehiculos/edit/{id}', [VehiculoController::class, 'edit'])->name('vehiculo.edit');
-    Route::put('vehiculos/{id}', [VehiculoController::class, 'update'])->name('vehiculo.update');
-    Route::delete('vehiculos/{id}', [VehiculoController::class, 'destroy'])->name('vehiculo.destroy');
+    Route::get('vehiculos', [VehiculoController::class, 'index'])->name('vehiculos.inicio');
+    Route::get('vehiculos/vehiculos', [VehiculoController::class, 'create'])->name('vehiculos.create');
+    Route::post('vehiculos', [VehiculoController::class, 'store'])->name('vehiculos.store');
+    Route::get('vehiculos/{id}', [VehiculoController::class, 'show'])->name('vehiculos.show');
+    Route::get('vehiculos/edit/{id}', [VehiculoController::class, 'edit'])->name('vehiculos.edit');
+    Route::put('vehiculos/{id}', [VehiculoController::class, 'update'])->name('vehiculos.update');
+    Route::delete('vehiculos/{id}', [VehiculoController::class, 'destroy'])->name('vehiculos.destroy');
 
 //Usuarios
 
-    Route::get('usuarios', [UsuariosController::class, 'index'])->name('usuario.index');
+    Route::get('usuarios', [UsuariosController::class, 'index'])->name('usuario.inicio');
     Route::get('usuarios/usuarios', [UsuariosController::class, 'create'])->name('usuario.create');
     Route::post('usuarios', [UsuariosController::class, 'store'])->name('usuario.store');
     Route::get('usuarios/{id}', [UsuariosController::class, 'show'])->name('usuario.show');

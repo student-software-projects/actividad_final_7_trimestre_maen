@@ -45,7 +45,7 @@
                         <td>{{ $propietario->updated_at }}</td>
                     </tr>
                 </table>
-                <a class="btn btn-primary btn-sm" href="{{ route('company.index') }}">Volver</a>
+                <a class="btn btn-primary btn-sm" href="{{ route('company.inicio') }}">Volver</a>
             </div>
         </div>
     </div>

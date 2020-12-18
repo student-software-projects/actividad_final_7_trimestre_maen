@@ -19,7 +19,7 @@
                    <input name="localidad" id="name" type="text" class="form-control">
                </div>
                <button type="submit" class="btn btn-primary">Guardar Nueva Localidad</button>
-               <a class="btn btn-sm btn-danger" href="{{route('vehiculo.index')}}">Cancelar</a>
+               <a class="btn btn-sm btn-danger" href="{{route('vehiculo.inicio')}}">Cancelar</a>
            </form>
         </div>
     </div>

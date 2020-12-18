@@ -37,7 +37,7 @@
                    <input name="Ciudad" id="ciudad" type="text" class="form-control" value="{{$propietario->Ciudad}}">
                </div>
                <button type="submit" class="btn btn-primary">Guardar Jugador</button>
-               <a class="btn btn-sm btn-danger" href="{{route('propietario.index')}}">Cancelar</a>
+               <a class="btn btn-sm btn-danger" href="{{route('propietario.inicio')}}">Cancelar</a>
            </form>
         </div>
     </div>

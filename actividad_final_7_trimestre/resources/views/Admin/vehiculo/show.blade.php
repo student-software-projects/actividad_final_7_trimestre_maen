@@ -27,7 +27,7 @@
                         <td>{{ $localidad->updated_at }}</td>
                     </tr>
                 </table>
-                <a class="btn btn-primary btn-sm" href="{{ route('vehiculo.index') }}">Volver</a>
+                <a class="btn btn-primary btn-sm" href="{{ route('vehiculo.inicio') }}">Volver</a>
             </div>
         </div>
     </div>

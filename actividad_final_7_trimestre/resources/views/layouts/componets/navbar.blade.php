@@ -1,5 +1,4 @@
-
-!-- Navbar -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
     <div class="container-fluid">
         <div class="navbar-wrapper">

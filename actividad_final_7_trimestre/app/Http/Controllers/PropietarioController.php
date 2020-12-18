@@ -9,14 +9,14 @@ class PropietarioController extends Controller
     public function index()
     {
         $propietarios=propietario::all();
-        return view('propietario.index',compact('propietarios'));
+        return view('propietario.inicio',compact('propietarios'));
     }
     public function create(){
         return view('propietario.create');
     }
     public function store(Request $request){
         $propietario=propietario::create($request->all());
-        return redirect()->route('propietario.index');
+        return redirect()->route('propietario.inicio');
     }
     public function show($id){
         $propietario=propietario::find($id);
@@ -30,11 +30,11 @@ class PropietarioController extends Controller
 
     public function update(Request  $request, $id){
         $propietario=propietario::find($id)->update($request->all());
-        return redirect()->route('propietario.index');
+        return redirect()->route('propietario.inicio');
 
     }
     public function destroy($id){
         $propietario=propietario::find($id)->delete();
-        return redirect()->route('propietario.index');
+        return redirect()->route('propietario.inicio');
     }
 }

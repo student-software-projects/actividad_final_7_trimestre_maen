@@ -9,14 +9,14 @@ class UsuariosController extends Controller
     public function index()
     {
         $usuarios=usuarios::all();
-        return view('usuario.index',compact('usuarios'));
+        return view('usuario.inicio',compact('usuarios'));
     }
     public function create(){
         return view('usuario.create');
     }
     public function store(Request $request){
         $usuarios=usuarios::create($request->all());
-        return redirect()->route('usuario.index');
+        return redirect()->route('usuario.inicio');
     }
     public function show($id){
         $usuarios=usuarios::find($id);
@@ -30,11 +30,11 @@ class UsuariosController extends Controller
 
     public function update(Request  $request, $id){
         $usuarios=usuarios::find($id)->update($request->all());
-        return redirect()->route('usuario.index');
+        return redirect()->route('usuario.inicio');
 
     }
     public function destroy($id){
         $usuarios=usuarios::find($id)->delete();
-        return redirect()->route('usuario.index');
+        return redirect()->route('usuario.inicio');
     }
 }

@@ -9,14 +9,14 @@ class VehiculoController extends Controller
     public function index()
     {
         $vehiculos=vehiculos::all();
-        return view('vehiculo.index',compact('vehiculos'));
+        return view('vehiculo.inicio',compact('vehiculos'));
     }
     public function create(){
         return view('vehiculo.create');
     }
     public function store(Request $request){
         $vehiculos=vehiculos::create($request->all());
-        return redirect()->route('vehiculo.index');
+        return redirect()->route('vehiculo.inicio');
     }
     public function show($id){
         $vehiculos=vehiculos::find($id);
@@ -30,11 +30,11 @@ class VehiculoController extends Controller
 
     public function update(Request  $request, $id){
         $vehiculos=vehiculos::find($id)->update($request->all());
-        return redirect()->route('vehiculo.index');
+        return redirect()->route('vehiculo.inicio');
 
     }
     public function destroy($id){
         $vehiculos=vehiculos::find($id)->delete();
-        return redirect()->route('vehiculo.index');
+        return redirect()->route('vehiculo.inicio');
     }
 }

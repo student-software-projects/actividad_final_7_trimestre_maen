@@ -45,7 +45,7 @@
                         <td>{{ $conductor->updated_at }}</td>
                     </tr>
                 </table>
-                <a class="btn btn-primary btn-sm" href="{{ route('conductores.index') }}">Volver</a>
+                <a class="btn btn-primary btn-sm" href="{{ route('conductores.inicio') }}">Volver</a>
             </div>
         </div>
     </div>
