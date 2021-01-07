@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models;
 
-class PropietarioController extends Controller
+class Propietario extends Controller
 {
     public function index()
     {

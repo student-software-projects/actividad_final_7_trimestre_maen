@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="perfect-scrollbar-on"><head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76">
+    <link rel="icon" type="image/png">
     <title>
         Intranet.Red
     </title>
@@ -13,12 +12,13 @@
     <!-- Nucleo Icons -->
     <link href="{{url('css/app.css')}}" rel="stylesheet" media="all">
     <script src="{{url('js/app.js')}}"></script>
-<body class="">
+
 <!-- Extra details for Live View on GitHub Pages -->
 @include('layouts\componets\navbar')
-<div class="wrapper">
 @include('layouts\componets\sidebar')
 @include('layouts\componets\aside')
+<body class="">
+<div class="wrapper">
 <!-- contenido en general -->
     <div class="main-panel ps">
         <div class="content">
@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="chart-area"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                            <div class="chart-area"><div class="chartjs-size-monitor" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
                                 <canvas id="chartBig1" width="753" height="220" class="chartjs-render-monitor" style="display: block; width: 753px; height: 220px;"></canvas>
                             </div>
                         </div>

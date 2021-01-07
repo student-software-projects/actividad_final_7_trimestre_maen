@@ -13,27 +13,21 @@
         </div>
         <ul class="nav">
             <li class="active ">
-                <a href="{{route('inicio.inicio')}}">
-                    <i class="tim-icons icon-chart-pie-36"></i>
-                    <p>Dashboard</p>
-                </a>
-            </li>
-            <li class="active ">
                 <a href="{{route('propietarios.inicio')}}">
                     <i class="tim-icons icon-chart-pie-45"></i>
-                    <p>Crear Un Propietario</p>
+                    <p>Consultar propietarios</p>
                 </a>
             </li>
             <li class="active ">
                 <a href="{{route('conductores.inicio')}}">
                     <i class="tim-icons icon-chart-pie-45"></i>
-                    <p>Crear Un Conductor</p>
+                    <p>Consultar Conductores</p>
                 </a>
             </li>
             <li class="active ">
                 <a href="{{route('vehiculos.inicio')}}">
                     <i class="tim-icons icon-chart-pie-45"></i>
-                    <p>Crear Vehiculos</p>
+                    <p>Consultar Vehiculos</p>
                 </a>
             </li>
 

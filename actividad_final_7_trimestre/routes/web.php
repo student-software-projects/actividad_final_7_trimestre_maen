@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\ConductorController;
-use App\Http\Controllers\PropietarioController;
-use App\Http\Controllers\UsuariosController;
-use App\Http\Controllers\VehiculoController;
+use App\Http\Controllers\ConductorController\ConductorController;
+use App\Http\Controllers\ConductorController\Propietario;
+use App\Http\Controllers\ConductorController\UsuariosController;
+use App\Http\Controllers\ConductorController\VehiculoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,13 +40,13 @@ Route::get('inicio', [ConductorController::class,'index'])->name('inicio.inicio'
 
 //propietarios
 
-    Route::get('propietarios', [PropietarioController::class, 'index'])->name('propietarios.inicio');
-    Route::get('propietarios/propietarios', [PropietarioController::class, 'create'])->name('propietarios.create');
-    Route::post('propietarios', [PropietarioController::class, 'store'])->name('propietarios.store');
-    Route::get('propietarios/{id}', [PropietarioController::class, 'show'])->name('propietarios.show');
-    Route::get('propietarios/edit/{id}', [PropietarioController::class, 'edit'])->name('propietarios.edit');
-    Route::put('propietarios/{id}', [PropietarioController::class, 'update'])->name('propietarios.update');
-    Route::delete('propietarios/{id}', [PropietarioController::class, 'destroy'])->name('propietarios.destroy');
+    Route::get('propietarios', [Propietario::class, 'index'])->name('propietarios.inicio');
+    Route::get('propietarios/propietarios', [Propietario::class, 'create'])->name('propietarios.create');
+    Route::post('propietarios', [Propietario::class, 'store'])->name('propietarios.store');
+    Route::get('propietarios/{id}', [Propietario::class, 'show'])->name('propietarios.show');
+    Route::get('propietarios/edit/{id}', [Propietario::class, 'edit'])->name('propietarios.edit');
+    Route::put('propietarios/{id}', [Propietario::class, 'update'])->name('propietarios.update');
+    Route::delete('propietarios/{id}', [Propietario::class, 'destroy'])->name('propietarios.destroy');
 
 //Vehiculos
 

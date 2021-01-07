@@ -1,8 +1,9 @@
+
 @include('layouts\app')
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <a class="btn btn-primary mt-3 mb-4" href="{{ route('propietario.create') }}">Crear Nuevo Jugador</a>
+            <a class="btn btn-primary mt-3 mb-4" href="{{ route('propietario.create') }}">Crear Nuevo Propietario</a>
               <table class="table table-striped">
                 <thead>
                 <tr>

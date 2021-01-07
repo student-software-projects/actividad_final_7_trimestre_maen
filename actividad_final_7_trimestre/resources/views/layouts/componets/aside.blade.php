@@ -1,7 +1,7 @@
 
 <div class="fixed-plugin">
     <div class="dropdown show-dropdown">
-        <a href="#" data-toggle="dropdown">
+        <a href="aside.blade.php" data-toggle="dropdown">
             <i class="fa fa-cog fa-2x"> </i>
         </a>
         <ul class="dropdown-menu">

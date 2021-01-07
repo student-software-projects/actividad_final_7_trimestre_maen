@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Conductor extends Model
+class Conductores extends Model
 {
     use HasFactory;
     protected $table='Conductores';
@@ -13,6 +13,4 @@ class Conductor extends Model
     protected $fillable=[
         'Numero de Cedula','Primer de Nombre','Segundo de Nombre','Primer Apellido','Segundo Apellido','Dirección','Telefono','Ciudad'
     ];
-
-
 }
