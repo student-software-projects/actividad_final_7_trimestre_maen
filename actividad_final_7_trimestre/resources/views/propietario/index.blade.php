@@ -1,9 +1,9 @@
-
-@include('layouts\app')
+@extends('layouts.app')
+@section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <a class="btn btn-primary mt-3 mb-4" href="{{ route('propietario.create') }}">Crear Nuevo Propietario</a>
+            <a class="btn btn-primary mt-18 mb-25" href="{{ route('propietario.create') }}">Crear Nuevo Propietario</a>
               <table class="table table-striped">
                 <thead>
                 <tr>
@@ -36,12 +36,12 @@
                       <td>{{$propietario->created_at}}</td>
                       <td>{{$propietario->updated_at}}</td>
                       <td>
-                          <form action="{{ route( 'propietario.destroy',$propietarios->id)}}" method="post">
+                          <form action="{{ route( 'propietario.destroy',$propietario->id)}}" method="post">
                               @csrf
                               @method('DELETE')
-                          <a href="{{ route('propietario.show',$propietarios->id)}}" class="btn btn-sm btn-info">Detalles</a>
-                          <a href="{{ route('propietario.edit',$propietarios->id)}}" class="btn btn-sm btn-warning">Editar</a>
-                          <buttonty type="submit" class="btn btn-sm btn-danger">Eliminar</buttonty>
+                          <a href="{{ route('propietario.show',$propietario->id)}}" class="btn btn-sm btn-info">Detalles</a>
+                          <a href="{{ route('propietario.edit',$propietario->id)}}" class="btn btn-sm btn-warning">Editar</a>
+                          <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
                           </form>
                       </td>
                   </tr>
@@ -51,4 +51,6 @@
         </div>
     </div>
 </div>
+@endsection
+
 

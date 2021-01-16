@@ -13,11 +13,12 @@
         </div>
         <ul class="nav">
             <li class="active ">
-                <a href="{{route('propietarios.inicio')}}">
+                <a href="{{route('propietario.index')}}">
                     <i class="tim-icons icon-chart-pie-45"></i>
                     <p>Consultar propietarios</p>
                 </a>
             </li>
+
             <li class="active ">
                 <a href="{{route('conductores.inicio')}}">
                     <i class="tim-icons icon-chart-pie-45"></i>
@@ -30,7 +31,6 @@
                     <p>Consultar Vehiculos</p>
                 </a>
             </li>
-
         </ul>
     </div>
 </div>

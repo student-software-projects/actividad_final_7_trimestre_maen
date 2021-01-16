@@ -11,6 +11,6 @@ class Propietario extends Model
     protected $table='propietario';
     protected $primaryKey='id';
     protected $fillable=[
-        'Numero de Cedula','Primer de Nombre','Segundo de Nombre','Primer Apellido','Segundo Apellido','Dirección','Telefono','Ciudad'
+        'Numero_de_Cedula','Primer_de_Nombre','Segundo_de_Nombre','Primer_Apellido','Segundo_Apellido','Dirección','Telefono','Ciudad'
     ];
 }
